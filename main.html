@@ -1,0 +1,17 @@
+PRINCIPAL COMPONENTS CALCULATOR<br>
+<head>
+    
+    <script src="math.js" type="text/javascript"></script>
+    <script src="PCmain.js"></script>
+
+</head>
+<body>
+    <div id="main">
+        <p>The file with the data must have headers and be separated by TABS.<br> The program ignores the first column</p>
+    <label for="UploadFileButton">Choose one or more tsv files:</label>
+    <input type="file" id="UploadFileButton" multiple onchange="choose_folder(this)"
+    accept=".tsv,.txt,.csv">
+    <button id="Calculation" type="button" onclick="calculate(this)">Calculate Principal Components</button> 
+    <div id="downloadLinksZone"></div>
+</div>  
+</body>
