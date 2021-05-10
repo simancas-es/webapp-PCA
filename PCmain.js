@@ -240,7 +240,7 @@ function calccovarianza(numbersx,averagex,numbersy,averagey){
     let sum=0.0;
     let numberentries=Math.min(numbersx.length,numbersy.length)
     for (let i=0;i<numberentries;i++){
-        sum+=(numbersx[i]-averagex)*(numberxy[i]-averagey);
+        sum+=(numbersx[i]-averagex)*(numbery[i]-averagey);
     }
     return sum/(numberentries);//unsure if n or n-1
 }
