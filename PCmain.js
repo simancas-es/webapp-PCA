@@ -79,9 +79,9 @@ function calculate(item){
 
         //Calculate the covariance matrix with each pair of variables
         //using only the non-skipped columns
-        let covariancematrix=new Array(numcols-1);
+        let covariancematrix=new Array(numcols);
         for(let i=0;i<numcols;i++){
-            covariancematrix[i]=new Array(numcols-1);
+            covariancematrix[i]=new Array(numcols);
             for(let j=0;j<numcols;j++){
                 covariancematrix[i][j]=calccovarianzaZ(holdercolumnstatistics[dataseti][i]['ZVALUES'],
                                                         holdercolumnstatistics[dataseti][j]['ZVALUES']);
